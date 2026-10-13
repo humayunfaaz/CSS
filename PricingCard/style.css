@@ -1,13 +1,12 @@
 *{
     padding: 0;
-    margin: 0;  
+    margin: 0;
     box-sizing: border-box;
 }
+
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
+    /* The page content is stacked vertically. */
+    display: block;
 }
 
 body{
@@ -15,21 +14,23 @@ body{
     background-color: #1a0535;
     color: white;
 }
+
 .heading{
     text-align: center;
     margin: 20px;
     font-size: 40px;
     font-weight: bold;
-    color :lightslategray
+    color: lightslategray;
 }
+
 .Time{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.btnm , .btny{
-    
+
+.btnm, .btny{
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -37,12 +38,13 @@ body{
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
-    
 }
-.btnm:hover , .btny:hover{
+
+.btnm:hover, .btny:hover{
     background-color: rgb(125, 122, 122);
-     color:#0c0115
+    color: #0c0115;
 }
+
 /* .spm {
     padding: 10px 20px;
     font-size: 15px;
@@ -53,22 +55,21 @@ body{
 }
 .spy {
     padding: 10px 20px;
-     font-size: 15px;
+    font-size: 15px;
     font-weight:500;
     background-color: rgb(74, 73, 73);
     border: 1px solid #8a8787;
     cursor: pointer;
 } */
+
 .PricingCard{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
-
-
 }
-.card {
+
+.card{
     background-color: rgb(60, 42, 78);
     width: 300px;
     height: 400px;
@@ -78,16 +79,20 @@ body{
     margin-top: 30px;
     padding: 20px;
     box-shadow: 0px 0px 10px #fff;
+    transition: transform 0.5s ease-in-out;
 }
+
 .price{
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.card p {
+
+.card p{
     margin-bottom: 10px;
     padding: 10px;
 }
+
 .card button{
     padding: 10px 20px;
     background-color: black;
@@ -97,12 +102,9 @@ body{
     cursor: pointer;
     font-size: 16px;
     width: 100%;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
-.card:hover{
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
- 
-   transform: translate(0px, -20px);
 
+.card:hover{
+    transform: translateY(-20px) scale(1.05);
 }
